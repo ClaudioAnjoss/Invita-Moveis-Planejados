@@ -3,6 +3,7 @@
 @import url(menu.css);
 @import url(pagina_inicial.css);
 @import url(footer.css);
+@import url(produtos.css);
 
 @font-face {
     font-family: Heading;
@@ -16,84 +17,12 @@ body {
 }
 
 
-/* Menu Produtos */
 
-#menu-produtos {
-    background-image: url(imagens/bg-produtos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #414042;
-    background-position: 16px 1px;
-    padding-bottom: 5%;
-}
-
-#menu-produtos .prod-cicle {
-    position: relative;
-    left: -10%;
-}
-
-.align-menu-produtos {
-    margin-left: auto;
-}
-
-#menu-produtos h1 {
-    color: #E5DED6;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 110%;
-    opacity: 0.5;
-    text-align: center;
-    position: relative;
-    padding: 10% 0 7%;
-    text-transform: uppercase;
-}
-
-.img-menu-produto {
-    border: 2px solid #E6DED6;
-    position: relative;
-    border-radius: 100%;
-    max-width: 413px;
-    text-align: center;
-    padding: 2%;
-    margin-bottom: 3%;
-    -webkit-box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.34);
-    box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.34);
-}
-
-@media only screen and (max-width: 767px) {
-    #menu-produtos .prod-cicle {
-        position: relative;
-        left: 0%;
-    }
-    .align-menu-produtos {
-        margin-left: 14%;
-    }
-}
-
-.nome-produto-menu {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 120%;
-    color: #F2EAE2;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.nome-produto-menu:hover {
-    color: #888888;
-}
-
-.prod-cicle img {
-    position: relative;
-    width: 100%;
-    border-radius: 100%;
-}
-
-.tam-menu {
+/* .tam-menu {
     min-width: 360px;
-}
+} */
 
-.tam-menu-2 {
+/* .tam-menu-2 {
     position: relative;
     left: -60px;
 }
@@ -138,12 +67,12 @@ body {
 
 #baixo {
     background: none;
-}
+} */
 
 
 /* Produtos da pagína produtos */
 
-#produtos2 {
+/* #produtos2 {
     background: #E5DED6 url(imagens/bg-selecionar-produtos.png) no-repeat center bottom;
     padding-bottom: 10%;
 }
@@ -151,11 +80,12 @@ body {
 #produtos2 img {
     margin-top: 10px;
     position: relative;
-    /*top: -13%;*/
+    /*top: -13%;
     transition: 0.5s;
 }
+*/
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     #produtos2 .img-fluid {
         width: 50%;
     }
@@ -164,7 +94,7 @@ body {
 #produtos2 img:hover {
     box-shadow: 5px 5px 8px #888888;
     transition: 0.5s;
-}
+} 
 
 .legenda-foto {
     max-width: 100%;
@@ -226,7 +156,7 @@ body {
 
 .canto-dir-bottom {
     border-radius: 0px 0px 100px 0px;
-}
+} */
 
 
 /* Pagina Forno --------------------------------------------------------------------------- */
