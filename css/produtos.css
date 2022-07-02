@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    max-height: 655px;
 }
 
 .menu__produtos .frame-left {

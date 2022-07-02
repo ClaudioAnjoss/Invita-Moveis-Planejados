@@ -11,7 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Css -->
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/daf59bf55a.js" crossorigin="anonymous"></script>
@@ -19,113 +19,114 @@
     <title>Invita - Sobre</title>
 </head>
 
-<body>
+<body class="container__sobre">
 
     <!--Barra do Menu-->
-    <header>
-        <div id="barra-menu">
-            <nav class="navbar navbar-expand-md bg navbar-dark">
-                <div class="container">
-                    <a href="index.html" class="navbar-brand logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="menu" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a href="sobre.html" class="active nav-link">Sobre</a>
-                            </li>
-                            <li id="produtos-menu" class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle bg-menu-responsive" role="button"
-                                    data-bs-toggle="dropdown">Produtos</a>
-                                <ul id="drop-menu" class="dropdown-menu">
-                                    <li><a href="produtos.html" class="dropdown-item">Coifas</a></li>
-                                    <li><a href="" class="dropdown-item">Cooktop Gás Black</a></li>
-                                    <li><a href="" class="dropdown-item">Cooktop Gás Inox</a></li>
-                                    <li><a href="forno.html" class="dropdown-item">Forno Multifunção</a></li>
-                                    <li><a href="" class="dropdown-item">Microondas</a></li>
-                                    <li><a href="" class="dropdown-item">Refrigeradores</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="suporte.html" class="nav-link">Suporte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link"><span>
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </span></a>
-                            </li>
+    <header id="barra-menu" class="bg">
+        <nav class="navbar navbar-expand-md navbar-dark container">
+
+            <a href="index.html" class="navbar-brand logo"><img src="imagens/Logo Clara.png" alt="Invita"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link active">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="produtos.html" class="nav-link" style="margin-right: 0;">Produtos</a>
+                    </li>
+                    <li id="produtos-menu" class="nav-item dropdown">
+                        <a href="#" class="nav-link  bg-menu-responsive" role="button" data-bs-toggle="dropdown"
+                            style="margin-left: 0; padding-left: 0; padding-right: 0;"><i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <ul id="drop-menu" class="dropdown-menu">
+                            <li><a href="produtos.html" class="dropdown-item">Coifas</a></li>
+                            <li><a href="" class="dropdown-item">Cooktop Gás Black</a></li>
+                            <li><a href="" class="dropdown-item">Cooktop Gás Inox</a></li>
+                            <li><a href="forno.html" class="dropdown-item">Forno Multifunção</a></li>
+                            <li><a href="" class="dropdown-item">Microondas</a></li>
+                            <li><a href="" class="dropdown-item">Refrigeradores</a></li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="suporte.html" class="nav-link">Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
     </header>
 
     <!--Conteudo-->
+
     <div id="pagina-sobre">
-        <div class="container">
-            <div class="row">
-                <div id="align-sobre" class="col-10">
-                    <h1>ELETRODOMÉSTICOS QUE TE <br> OFERECEM <span class="verde">ESCOLHA</span></h1>
-                    <p>A gente sabe como é gostoso equipar uma casa e pensar em cada detalhe.</p>
-                    <p>Se você está realizando este sonho, convidamos você a criar ambientes que traduzam e evidenciem a
-                        sua personalidade.</p>
-                    <p>Para sua vida, cozinha ou espaço gourmet, oferecemos produtos diferenciados, com estética
-                        moderna, qualidade superior, portfólio completo, preço atraente e assistência eficiente.</p>
-                    <p>Escolha ser diferente e viver a autenticidade do seu lar. Escolha ser Invita.</p>
-                </div>
+        <div class="row container mx-auto">
+            <div id="align-sobre">
+                <h1>ELETRODOMÉSTICOS QUE TE <br> OFERECEM <span class="verde">ESCOLHA</span></h1>
+                <p>A gente sabe como é gostoso equipar uma casa e pensar em cada detalhe.</p>
+                <p>Se você está realizando este sonho, convidamos você a criar ambientes que traduzam e evidenciem a sua
+                    personalidade.</p>
+                <p>Para sua vida, cozinha ou espaço gourmet, oferecemos produtos diferenciados, com
+                    <strong>estética</strong> moderna, <strong>qualidade</strong> superior, <strong>portfólio</strong>
+                    completo, preço atraente e <strong>assistência</strong> eficiente.
+                </p>
+                <p>Escolha ser diferente e viver a autenticidade do seu lar. <strong>Escolha ser Invita.</strong></p>
             </div>
         </div>
     </div>
 
-    <!--Rodape-->
-    <footer id="rodape">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-md-2">
-                    <ul>
-                        <li class="sobre-rodape">Sobre</li>
-                        <li><a href="">Produto</a></li>
-                        <li><a href="">Garantia</a></li>
-                        <li><a href="">Assisténcia Técnica</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-md-3">
-                    <ul class="p-rodape">
-                        <li><strong>Contato</strong></li>
-                        <li>Telefone: <span class="contato">0800 723 1202</span></li>
-                        <li>E-mail: <span class="contato">sac@elettromec.com.br</span></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 logo-rodape">
-                    <img class="p-rodape img-fluid" src="imagens/logo-rodape.png" alt="">
-                </div>
+    <footer id="rodape" style="margin: 0;">
+
+        <div class="content__rodape container">
+            <div class="conteudo_rodape">
+                <ul>
+                    <li class="title__list--rodape">Sobre</li>
+                    <li><a href="">Produto</a></li>
+                    <li><a href="">Garantia</a></li>
+                    <li><a href="">Assisténcia Técnica</a></li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-md-4 text-start pt-4">
-                    Termos & Condições
-                </div>
-                <div class="col-md-4 pt-4">
-                    2022 Elettromec. Todos os direitos reservados.
-                </div>
-                <div class="col-md-3 alinhamento-icons">
-                    <i class="fa-brands fa-instagram rounded-circle"></i>
-                    <i class="fa-brands fa-facebook rounded-circle"></i>
-                    <i class="fa-brands fa-youtube rounded-circle"></i>
-                    <i class="fa-brands fa-pinterest rounded-circle"></i>
-                    <i class="fa-brands fa-linkedin rounded-circle rounded-circle"></i>
-                </div>
-
+            <div class="conteudo_rodape">
+                <ul class="p-rodape">
+                    <li class="title__list--rodape">Contato</li>
+                    <li>Telefone: <span class="contato">0800 723 1202</span></li>
+                    <li>E-mail: <span class="contato">sac@elettromec.com.br</span></li>
+                </ul>
+            </div>
+            <div class="conteudo_rodape">
+                <img class="p-rodape img-fluid" src="imagens/logo-rodape.png" alt="">
+            </div>
+            <div class="conteudo_rodape">
+                Termos & Condições
+            </div>
+            <div class="conteudo_rodape">
+                <p style="margin: 0;">2022 Elettromec. Todos os direitos reservados.</p>
+            </div>
+            <div class="conteudo_rodape alinhamento-icons">
+                <i class="fa-brands fa-instagram rounded-circle"></i>
+                <i class="fa-brands fa-facebook rounded-circle"></i>
+                <i class="fa-brands fa-youtube rounded-circle"></i>
+                <i class="fa-brands fa-pinterest rounded-circle"></i>
+                <i class="fa-brands fa-linkedin rounded-circle rounded-circle"></i>
             </div>
         </div>
+
     </footer>
 
 
@@ -139,10 +140,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script src="js/menu_dropdown.js"></script>
 </body>
 
 </html>

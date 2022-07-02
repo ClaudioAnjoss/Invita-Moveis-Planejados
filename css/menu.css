@@ -3,13 +3,16 @@
 .bg {
     background: #252525;
     color: white;
-    padding: 25px 0;
 }
 
 #barra-menu {
     font-size: 1.2em;
     position: relative;
     z-index: 10;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-collapse {

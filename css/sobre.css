@@ -1,0 +1,62 @@
+/* Pagina Sobre --------------------------------------------------------------------------- */
+
+.container__sobre {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F2EAE2 url(../imagens/elementos-01\ 1.png) no-repeat top right;
+    background-size: 622px 888px;
+}
+
+#pagina-sobre #align-sobre {
+    max-width: 868px;
+    margin: 5% 0;
+    background: url(../imagens/Vector.png) no-repeat center left;
+    background-position: 0 30%;
+    border-radius: 20px;
+    position: relative;
+}
+
+#pagina-sobre h1 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 120%;
+    color: #252525;
+    margin-bottom: 8%;
+    background: #F2EAE2;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.verde {
+    font-weight: bold;
+    color: #8B985E;
+}
+
+#pagina-sobre p {
+    font-size: 20px;
+    line-height: 120%;
+    color: #414042;
+    background: #F2EAE2;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    #align-sobre {
+        background: #F2EAE2;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #align-sobre {
+        margin: 5% auto;
+        text-align: center;
+    }
+    #pagina-sobre h1 {
+        font-size: 30px;
+    }
+}
+

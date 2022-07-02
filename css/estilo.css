@@ -4,6 +4,8 @@
 @import url(pagina_inicial.css);
 @import url(footer.css);
 @import url(produtos.css);
+@import url(sobre.css);
+@import url(onde-encontrar.css);
 
 @font-face {
     font-family: Heading;
@@ -383,83 +385,10 @@ body {
 }
 
 
-/* Pagina Sobre --------------------------------------------------------------------------- */
-
-#pagina-sobre {
-    background: #F2EAE2 url(imagens/elementos-01\ 1.png) no-repeat;
-    background-size: 495px;
-    background-position: 123% 61%;
-}
-
-#pagina-sobre h1 {
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 120%;
-    color: #252525;
-    margin-bottom: 8%;
-}
-
-.verde {
-    font-weight: bold;
-    color: #8B985E;
-}
-
-#pagina-sobre p {
-    font-size: 20px;
-    line-height: 120%;
-    color: #414042;
-}
-
-#align-sobre {
-    margin: 5% 0;
-    background: #F2EAE2;
-    border-radius: 20px;
-}
-
-@media only screen and (max-width: 767px) {
-    #align-sobre {
-        margin: 5% auto;
-        text-align: center;
-    }
-    #pagina-sobre h1 {
-        font-size: 30px;
-    }
-}
 
 
-/* Pagina Onde Encontrar --------------------------------------------------------------------------- */
 
-#pagina-onde-encontrar {
-    background: url(imagens/bg-pagina-onde-encontrar.png) no-repeat;
-    position: relative;
-    z-index: 10;
-}
 
-#titulo-onde {
-    background: #4140424d;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 110%;
-    color: #E6DED6;
-    padding: 8% 0 6% 0;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-#conteudo-onde-encontrar {
-    background: #f2eae280 url(imagens/fundo-formulario.png) no-repeat;
-    background-position: 123%;
-    padding: 7%;
-    background-size: 613px;
-}
-
-#pagina-onde-encontrar h1 {
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 120%;
-    color: #414042;
-}
 
 @media only screen and (max-width: 370px) {
     .nome-produto-menu {

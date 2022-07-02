@@ -2,40 +2,34 @@
 
 #rodape {
     position: relative;
-    z-index: 5;
+    z-index: 11;
     background-color: #414042;
     font-size: 16px;
     color: #F2EAE2;
-    padding-bottom: 2%;
-    display: flex;
-    flex-direction: column;
+    margin-top: 5%;
+    max-height: 300px;
+}
+
+#rodape .content__rodape {
+    display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#rodape .bg-rodape {
-    position: absolute;
-    left: 1%;
-    bottom: 0;
-}
-
-#rodape .content__bg--footer {
+#rodape .content__rodape .conteudo_rodape {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    z-index: 5;
+    z-index: 3;
+
 }
 
-#rodape p {
-    background: #414042;
-}
-
-#rodape .row {
-    position: relative;
-    z-index: 10;
-}
-
-#rodape ul {
-    background-color: #414042;
+#rodape .content__rodape .conteudo_rodape img {
+    width: 100%;
+    max-width: 210px;
 }
 
 #rodape ul li {
@@ -47,29 +41,16 @@
     text-decoration: none;
 }
 
-.sobre-rodape {
+.title__list--rodape {
     margin-bottom: 20%;
     font-weight: bold;
-}
-
-.p-rodape {
-    margin-top: 19%;
-    background-color: #414042;
+    background: #414042;
+    max-width: 50px;
+    padding-left: 2%;
 }
 
 .contato {
     color: #e68034;
-}
-
-.logo-rodape {
-    margin-left: auto;
-    text-align: center;
-    background-color: #414042;
-}
-
-.alinhamento-icons {
-    margin-left: auto;
-    text-align: end;
 }
 
 #rodape i {
@@ -84,10 +65,71 @@
     color: #414042;
 }
 
+#rodape .bg_rodape--float {
+    position: absolute;
+    top: -66%;
+    left: 19%;
+}
+
+@media (max-width: 450px) {
+    #rodape .content__rodape {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #rodape .bg_rodape--float {
+        display: none;
+    }
+}
+
+
+/* 
+
+
+
+#rodape p {
+    background: #414042;
+}
+
+#rodape .row {
+    position: relative;
+    z-index: 10;
+}
+
+#rodape ul {
+    background-color: #414042;
+}
+
+
+
+
+
+
+
+.p-rodape {
+    margin-top: 19%;
+    background-color: #414042;
+}
+
+
+
+.logo-rodape {
+    margin-left: auto;
+    text-align: center;
+    background-color: #414042;
+}
+
+.alinhamento-icons {
+    margin-left: auto;
+    text-align: end;
+}
+
+ */
+
 @media only screen and (max-width: 767px) {
     .logo-rodape {
         margin: 2% auto;
         text-align: center;
+        width: 100px;
     }
     .sobre-rodape {
         margin-bottom: 4%;
@@ -98,5 +140,9 @@
     .alinhamento-icons {
         margin: 3% auto;
         text-align: center;
+    }
+
+    #rodape {
+        max-height: 350px;
     }
 }

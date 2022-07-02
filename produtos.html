@@ -36,9 +36,13 @@
                     <li class="nav-item">
                         <a href="sobre.html" class="nav-link">Sobre</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="produtos.html" class="nav-link active" style="margin-right: 0;">Produtos</a>
+                    </li>
                     <li id="produtos-menu" class="nav-item dropdown">
-                        <a href="#" class="active nav-link dropdown-toggle bg-menu-responsive" role="button"
-                            data-bs-toggle="dropdown">Produtos</a>
+                        <a href="#" class="nav-link  bg-menu-responsive" role="button" data-bs-toggle="dropdown"
+                            style="margin-left: 0; padding-left: 0; padding-right: 0;"><i
+                                class="fa-solid fa-caret-down"></i></a>
                         <ul id="drop-menu" class="dropdown-menu">
                             <li><a href="produtos.html" class="dropdown-item">Coifas</a></li>
                             <li><a href="" class="dropdown-item">Cooktop Gás Black</a></li>
@@ -114,7 +118,6 @@
     </section>
 
     <!--Produtos-->
-
     <section class="grade__produtos">
         <div class="content_grade--produtos container">
 
@@ -176,61 +179,52 @@
         </div>
     </section>
 
-
-
-
-    <!--Rodape-->
     <footer id="rodape" style="margin: 0;">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-md-2">
-                    <ul>
-                        <li class="sobre-rodape">Sobre</li>
-                        <li><a href="">Produto</a></li>
-                        <li><a href="">Garantia</a></li>
-                        <li><a href="">Assisténcia Técnica</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-md-3">
-                    <ul class="p-rodape">
-                        <li><strong>Contato</strong></li>
-                        <li>Telefone: <span class="contato">0800 723 1202</span></li>
-                        <li>E-mail: <span class="contato">sac@elettromec.com.br</span></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 logo-rodape">
-                    <img class="p-rodape img-fluid" src="imagens/logo-rodape.png" alt="">
-                </div>
+        <div class="content__rodape container">
+            <div class="conteudo_rodape">
+                <ul>
+                    <li class="title__list--rodape">Sobre</li>
+                    <li><a href="">Produto</a></li>
+                    <li><a href="">Garantia</a></li>
+                    <li><a href="">Assisténcia Técnica</a></li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-md-4 text-start pt-4">
-                    Termos & Condições
-                </div>
-                <div class="col-md-4 pt-4">
-                    2022 Elettromec. Todos os direitos reservados.
-                </div>
-                <div class="col-md-3 alinhamento-icons">
-                    <i class="fa-brands fa-instagram rounded-circle"></i>
-                    <i class="fa-brands fa-facebook rounded-circle"></i>
-                    <i class="fa-brands fa-youtube rounded-circle"></i>
-                    <i class="fa-brands fa-pinterest rounded-circle"></i>
-                    <i class="fa-brands fa-linkedin rounded-circle rounded-circle"></i>
-                </div>
-
+            <div class="conteudo_rodape">
+                <ul class="p-rodape">
+                    <li class="title__list--rodape">Contato</li>
+                    <li>Telefone: <span class="contato">0800 723 1202</span></li>
+                    <li>E-mail: <span class="contato">sac@elettromec.com.br</span></li>
+                </ul>
+            </div>
+            <div class="conteudo_rodape">
+                <img class="p-rodape img-fluid" src="imagens/logo-rodape.png" alt="">
+            </div>
+            <div class="conteudo_rodape">
+                Termos & Condições
+            </div>
+            <div class="conteudo_rodape">
+                <p style="margin: 0;">2022 Elettromec. Todos os direitos reservados.</p>
+            </div>
+            <div class="conteudo_rodape alinhamento-icons">
+                <i class="fa-brands fa-instagram rounded-circle"></i>
+                <i class="fa-brands fa-facebook rounded-circle"></i>
+                <i class="fa-brands fa-youtube rounded-circle"></i>
+                <i class="fa-brands fa-pinterest rounded-circle"></i>
+                <i class="fa-brands fa-linkedin rounded-circle rounded-circle"></i>
             </div>
         </div>
+
     </footer>
 
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/menu_dropdown.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
