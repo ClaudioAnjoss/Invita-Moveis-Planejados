@@ -1,0 +1,292 @@
+/* Pagina Forno --------------------------------------------------------------------------- */
+
+#page_produto {
+    background: #E5DED6 url(../imagens/garrafa.png) no-repeat;
+    background-position: 98% 91%;
+    min-height: 320px;
+}
+
+#bg-forno {
+    background: #414042;
+    max-height: 380px;
+    padding: 10%;
+    position: relative;
+}
+
+#bg-forno .left {
+    position: absolute;
+    top: 22px;
+    left: 0;
+}
+
+#bg-forno .right {
+    position: absolute;
+    top: -28px;
+    right: 0;
+}
+
+#bg-forno h1 {
+    color: #E6DED6;
+    font-weight: bold;
+    font-size: 48px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+#cont-forno .local {
+    font-size: 24px;
+    padding: 3%;
+}
+
+
+
+#lista-itens .carousel__indicador {
+    max-width: 100px;
+    max-height: 850px;
+    grid-area: indicador;
+    height: max-content;
+}
+
+#lista-itens .carousel__indicador ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+#lista-itens .carousel__indicador ul li {
+    margin: 16px 0;
+    overflow: hidden;
+    max-height: 113px;
+    border-radius: 10px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#lista-itens .carousel__itens {
+    max-width: 605px;
+    max-height: 850px;
+    grid-area: item;
+    padding: 3%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-itens .carousel__itens img {
+    border-radius: 15px;
+}
+
+#lista-itens .descricao {
+    max-width: 300px;
+    grid-area: descricao;
+    padding: 3%;
+}
+
+#lista-itens #informacoes-dropdown {
+    grid-area: informacoes;
+    max-width: 750px;
+    width: 100%;
+    padding: 5% 5% 5% 0;
+}
+
+#lista-itens #informacoes-dropdown .info-produtos {
+    border-top: 1px solid #E5C791;
+    border-bottom: 1px solid #E5C791;
+    background: url(imagens/seta\ baixo.png) no-repeat center right;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+}
+
+#lista-itens #informacoes-dropdown .tit-prod {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+#lista-itens #informacoes-dropdown .tit-prod:hover {
+    background: #e5c89173;
+}
+
+#lista-itens #informacoes-dropdown .tit-prod.active .icon {
+    display: none;
+}
+
+#lista-itens {
+    display: grid;
+    grid-template-areas: 
+        'indicador item descricao'
+        'informacoes informacoes descricao';
+    justify-content: center;
+    position: relative;
+}
+
+.breadcrumb-item.active {
+    font-weight: bold;
+    color: #414042;
+}
+
+.local a {
+    text-decoration: none;
+    color: #414042;
+}
+
+#cont-forno h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #252525;
+    margin-bottom: 0;
+}
+
+#cont-forno h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 20px 0 20px;
+}
+
+.codigo-prod {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.info {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 40px 0 40px 0;
+}
+
+.img-lat img {
+    width: 99px;
+    height: 113px;
+}
+
+.tit-prod {
+    font-size: 24px;
+    line-height: 120%;
+}
+
+#informacoes-dropdown .card {
+    background-color: #e5ded600;
+    border: none;
+}
+
+#info-drop {
+    position: relative;
+    top: -110px;
+    z-index: 1;
+    height: 480px;
+}
+
+#page_produto #formulario_-page--produto {
+    margin-top: 3%;
+    margin-left: 15%;
+    background-color: #E5DED6;
+    max-width: 488px;
+    border-radius: 10px;
+    padding: 1%;
+    
+}
+
+#page_produto #formulario_-page--produto .form-aba-produtos {
+    max-width: 488px;
+    margin: 5%;
+}
+
+#page_produto #formulario_-page--produto .receba-novidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page_produto #formulario_-page--produto .bg-receba-novidades {
+    position: absolute;
+    top: -200px;
+    left: 37px;
+}
+
+#page_produto #formulario_-page--produto h1 {
+    font-size: 40px;
+    line-height: 110%;
+    font-weight: bold;
+    color: #AC3D63;
+}
+
+#page_produto #formulario_-page--produto .btn {
+    padding: 10px 20px;
+    width: 158px;
+    line-height: 20px;
+    background: #414042;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.form-prod {
+    padding: 7%;
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+    #lista-itens {
+        grid-template-areas: 
+            'indicador item item'
+            'descricao descricao informacoes'
+            ;        
+    }
+
+    #lista-itens .carousel__itens {
+        max-height: max-content;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #lista-itens .carousel__indicador ul li {
+        width: 50px;
+        height: 50px;
+        margin: 4px;
+    }
+
+    #page_produto #formulario_-page--produto {
+        margin: auto;
+    }
+
+    #informacoes-dropdown {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #bg-forno {
+        background: #414042 url(imagens/bg-forno.png) no-repeat;
+        background-size: cover;
+    }
+    #bg-forno h1 {
+        color: #938F8C;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 570px) {
+    #lista-itens #informacoes-dropdown .tit-prod {
+        padding: 4px;
+        font-size: 16px;
+    }
+
+    #cont-forno h2 {
+        font-size: 16px;
+    }
+
+    #cont-forno p {
+        font-size: 14px;
+    }
+}

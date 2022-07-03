@@ -1,0 +1,85 @@
+/* Pagina Suporte --------------------------------------------------------------------------- */
+
+
+#page__suport {
+    background: #F2EAE2 url(../imagens/fundo-formulario.png) no-repeat center left;
+}
+
+.sup-tit {
+    position: relative;
+}
+
+.sup-tit h1 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 6%;
+    background: #414042;
+    max-height: 227px;
+    color: #F2EAE2;
+}
+
+.sup-tit img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#suporte .formulario {
+    max-width: 422px;
+    margin-left: auto;
+    position: relative;
+}
+
+#suporte .formulario img {
+    position: absolute;
+    bottom: -40%;
+    right: -50%;
+}
+.formulario {
+    background: #F2EAE2;
+    border-radius: 15px;
+}
+
+.formulario h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #AC3D63;
+}
+
+.formulario p {
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.formulario span {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.formulario textarea {
+    height: 122px;
+    margin-bottom: 23px;
+}
+
+.formulario .btn {
+    background: #414042;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 763px) {
+    .formulario {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sup-tit img {
+        display: none;
+    }
+}

@@ -299,7 +299,7 @@ section.bg-home {
 
 /* Receba as novidades */
 
-#formulario {
+#formulario__page--inicial {
     position: relative;
     z-index: 3;
     background: #fff;
@@ -307,19 +307,19 @@ section.bg-home {
     grid-template-columns: 1fr 1fr;
 }
 
-#formulario .receba-novidades {
+#formulario__page--inicial .receba-novidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#formulario .bg-receba-novidades {
+#formulario__page--inicial .bg-receba-novidades {
     position: absolute;
     top: -200px;
     left: 37px;
 }
 
-#formulario h1 {
+#formulario__page--inicial h1 {
     font-size: 40px;
     line-height: 110%;
     font-weight: bold;
@@ -337,7 +337,7 @@ section.bg-home {
     border-radius: 15px;
 }
 
-#formulario .btn {
+#formulario__page--inicial .btn {
     padding: 10px 20px;
     width: 158px;
     line-height: 20px;
