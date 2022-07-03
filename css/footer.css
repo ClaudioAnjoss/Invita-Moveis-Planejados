@@ -68,7 +68,7 @@
 #rodape .bg_rodape--float {
     position: absolute;
     top: -66%;
-    left: 19%;
+    left: 7%;
 }
 
 @media (max-width: 450px) {
@@ -80,6 +80,15 @@
         display: none;
     }
 }
+
+@media (min-width: 1445px) {
+    #rodape .bg_rodape--float {
+        position: absolute;
+        top: -66%;
+        left: 20%;
+    }
+}
+
 
 
 /* 

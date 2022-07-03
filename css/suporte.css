@@ -1,6 +1,5 @@
 /* Pagina Suporte --------------------------------------------------------------------------- */
 
-
 #page__suport {
     background: #F2EAE2 url(../imagens/fundo-formulario.png) no-repeat center left;
 }
@@ -22,6 +21,10 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#suporte {
+    padding: 4%;
 }
 
 #suporte .formulario {

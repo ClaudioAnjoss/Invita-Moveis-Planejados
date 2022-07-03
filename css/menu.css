@@ -54,3 +54,10 @@ header .navbar-dark .navbar-nav .nav-link.active {
 .dropdown-menu {
     background: #252525;
 }
+
+@media only screen and (max-width: 991px) {
+    #barra-menu ul li a {
+        margin: 5px 13px;
+        padding: 0;
+    }
+}

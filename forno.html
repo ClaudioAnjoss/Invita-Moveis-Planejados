@@ -5,18 +5,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap5/bootstrap.min.css">
-
     <!-- Css -->
-    <link rel="stylesheet" href="css/estilo.css">
-
+    <link rel="stylesheet" href="css/global.css">
     <!--Font Awesome-->
     <script src="jquery-3.6.0.min.js"></script>
     <script src="bootstrap5/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/daf59bf55a.js" crossorigin="anonymous"></script>
-
     <title>Invita - Forno</title>
 </head>
 
@@ -352,6 +348,7 @@
         </div>
     </section>
 
+    <!-- Rodape -->
     <footer id="rodape" style="margin: 0;">
 
         <div class="content__rodape container">
@@ -395,29 +392,8 @@
     </footer>
     
 
-
-    <script>
-        $(document).ready(function () {
-            $('.action_click').on('click', function () {
-                var id = $(this).data("id");
-                console.log(id);
-                $("#" + id).toggle();
-            });
-
-            $('.drop-detalhes').click(() => {
-                $('.drop-detalhes-icon').toggle('slow');
-            })
-            $('.drop-informacoes').click(() => {
-                $('.drop-informacoes-icon').toggle('slow');
-            })
-            $('.drop-download').click(() => {
-                $('.drop-download-icon').toggle('slow');
-            })
-            $('.drop-garantia').click(() => {
-                $('.drop-garantia-icon').toggle('slow');
-            })
-        });
-    </script>
+    <script src="js/dropdown_info_produtos.js"></script>
+    <script src="js/menu_dropdown.js"></script>
 </body>
 
 </html>

@@ -60,11 +60,26 @@
     color: #414042;
 }
 
+#pagina-onde-encontrar p {
+    font-size: 18px;
+    line-height: 120%;
+    color: #414042;
+}
+
 @media (max-width: 1000px) {
     #pagina-onde-encontrar .bg-onde-encontar {
         position: absolute;
         z-index: 0;
     } 
+}
+
+@media only screen and (max-width: 767px) {
+    #pagina-onde-encontrar h1 {
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 120%;
+        color: #414042;
+    }
 }
 
 @media (max-width: 500px) {

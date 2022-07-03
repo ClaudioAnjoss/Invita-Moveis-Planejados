@@ -93,9 +93,6 @@ section.bg-home {
     max-width: 320px;
 }
 
-
-
-
 /* Produtos */
 
 #produtos {
@@ -251,11 +248,7 @@ section.bg-home {
     opacity: 0;
 }
 
-@media only screen and (max-width: 767px) {
-    .figure-box figure:hover figcaption {
-        opacity: 0;
-    }
-}
+
 
 .leg-foto {
     margin: 0 auto;
@@ -269,15 +262,6 @@ section.bg-home {
 
 #produtos a:hover .legenda-foto-home {
     opacity: 1;
-}
-
-
-@media only screen and (max-width: 763px) {
-    .btn-prod .btn {
-        width: 216px;
-        height: 43px;
-        font-size: 18px;
-    }
 }
 
 .cant-esq-t {
@@ -301,6 +285,7 @@ section.bg-home {
 
 #formulario__page--inicial {
     position: relative;
+    padding: 3%;
     z-index: 3;
     background: #fff;
     display: grid;
@@ -353,6 +338,80 @@ section.bg-home {
     right: 0;
 }
 
+@media (min-width: 1445px) {
+    #formulario__page--inicial {
+        padding: 0;
+    }
+    .garrafa img {
+        position: absolute;
+        top: -39px;
+        right: 8%;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    #produtos .escolha-ser-invita {
+        grid-template-columns: 700px 414px;
+    }
+
+    #produtos .btn-prod {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #produtos .escolha-ser-invita {
+        grid-template-columns: 500px 414px;
+    }
+
+    #produtos {
+        z-index: 4;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #produtos .escolha-ser-invita {
+        grid-template-columns: 400px 300px;
+    }
+
+    #produtos .escolha-ser-invita .esq img {
+        height: 734px;
+    }
+
+    #formulario__page--inicial {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .figure-box figure:hover figcaption {
+        opacity: 0;
+    }
+
+    .casa {
+        text-align: center;
+    }
+
+    .btn-prod .btn {
+        width: 216px;
+        height: 43px;
+        font-size: 18px;
+    }
+
+    #produtos .line-bg-escola-ser-invita {
+        display: none;
+    }
+
+    #produtos .escolha-ser-invita {
+        display: none;
+    }
+
+    #produtos .btn-prod .btn {
+        width: 200px;
+    }
+}
+
 @media only screen and (max-width: 434px) {
     #produtos h1 {
         font-size: 25px;
@@ -361,11 +420,5 @@ section.bg-home {
     #produtos .btn-prod .btn {
         font-size: 16px;
         height: 50px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    #produtos .line-bg-escola-ser-invita {
-        display: none;
     }
 }

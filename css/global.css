@@ -1,0 +1,21 @@
+/* Estrutura do site */
+
+@import url(menu.css);
+@import url(pagina_inicial.css);
+@import url(footer.css);
+@import url(produtos.css);
+@import url(sobre.css);
+@import url(onde-encontrar.css);
+@import url(forno.css);
+@import url(suporte.css);
+
+@font-face {
+    font-family: Heading;
+    src: url(fonts/Heading-Pro-Thin-trial.ttf)
+}
+
+html,
+body {
+    overflow-x: hidden;
+    min-width: 350px;
+}
