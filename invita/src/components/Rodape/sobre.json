@@ -1,0 +1,15 @@
+[
+    {
+      "nome": "Produto",
+      "href": "/produto"
+    },
+    {
+      "nome": "Garantia",
+      "href": "/garantia"
+    },
+    {
+      "nome": "Assistência Técnica",
+      "href": "/assistencia-tecnica"
+    }
+  ]
+  

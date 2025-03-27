@@ -1,0 +1,47 @@
+{
+    "contato": {
+      "telefone": "0800 723 1202",
+      "email": "sac@elettromec.com.br",
+      "whatsapp": "+55 11 91234-5678",
+      "endereco": {
+        "rua": "Avenida Exemplo, 123",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01000-000",
+        "pais": "Brasil"
+      },
+      "redes_sociais": [
+        {
+            "nome": "Instagram",
+            "url": "https://www.instagram.com/elettromec",
+            "image": "https://leadsbridge.com/wp-content/themes/leadsbridge/img/integration-lg-logos/logo681.png"
+          },
+          {
+            "nome": "Facebook",
+            "url": "https://www.facebook.com/elettromec",
+            "image": "https://cdn-icons-png.flaticon.com/256/3670/3670032.png"
+          },
+          {
+            "nome": "LinkedIn",
+            "url": "https://www.linkedin.com/company/elettromec",
+            "image": "https://cdn-icons-png.flaticon.com/256/174/174857.png"
+          },
+          {
+            "nome": "Twitter",
+            "url": "https://twitter.com/elettromec",
+            "image": "https://cdn-icons-png.flaticon.com/256/733/733579.png"
+          },
+          {
+            "nome": "YouTube",
+            "url": "https://www.youtube.com/c/elettromec",
+            "image": "https://cdn-icons-png.flaticon.com/256/1384/1384060.png"
+          },
+          {
+            "nome": "Pinterest",
+            "url": "https://www.pinterest.com/elettromec",
+            "image": "https://cdn-icons-png.flaticon.com/256/733/733621.png"
+          }
+    ]
+    }
+  }
+  
