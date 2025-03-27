@@ -1,6 +1,7 @@
 import MenuNavegacao from '@/components/MenuNavegacao'
 import Rodape from '@/components/Rodape'
 import { Outlet } from 'react-router'
+import { Toaster } from 'sonner'
 
 export default function PaginaPrincipal() {
   return (
@@ -8,6 +9,7 @@ export default function PaginaPrincipal() {
       <MenuNavegacao />
       <Outlet />
       <Rodape />
+      <Toaster />
     </main>
   )
 }

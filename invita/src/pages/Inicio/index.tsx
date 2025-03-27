@@ -7,32 +7,37 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import background from '@/image/bg-header-home.png'
-import background2 from '@/image/bg-dir-sobre.png'
+import backgroundNovidades from '@/image/bg-receba-novidades.png'
+import logo from '@/image/LogoClara.png'
+import MenuEscolha from '@/components/MenuEscolha'
+import bgEscolha from '@/image/escolha-ser-invita-bg-2.png'
+import bgGarrafa from '@/image/garrafa.png'
+import { InputForm } from '@/components/ui/useform'
 
 export default function Inicio() {
   return (
     <section
-      className="w-full"
+      className="w-full "
       style={{
-        backgroundImage: `url(${background}), url(${background2})`,
-        backgroundSize: 'cover, contain',
-        backgroundPosition: 'top, top right',
-        backgroundRepeat: 'no-repeat, no-repeat',
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'top',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="container mx-auto text-primary">
-        <h1 className="text-4xl mt-36">
+      <div className="container mx-auto text-primary px-4">
+        <h1 className="text-4xl mt-16 md:mt-36">
           A <strong>VIDA</strong> É <br /> UM
           <strong>
             GRANDE <br /> CONVITE
           </strong>
         </h1>
-        <p className="text-2xl font-light pt-4 mb-36">
+        <p className="text-2xl font-light pt-4 mb-16 md:mb-36">
           Viva intensamente cada momento com mais <br /> design, alta
           performance, qualidade e eficiência.
         </p>
 
-        <div className="flex justify-around gap-2 p-2 flex-wrap mb-16">
+        <div className="flex flex-col md:flex-row justify-around gap-2 p-2 mb-16">
           <iframe
             className="w-full max-w-[620px] min-h-80"
             src="https://www.youtube.com/embed/LHLgcwd0qtk"
@@ -42,7 +47,38 @@ export default function Inicio() {
             allowFullScreen
           />
 
-          <Card className="text-center  font-light sm:w-2/3 md:w-1/3">
+          <Card className="w-full text-center font-light lg:max-w-[400px]">
+            <CardHeader>
+              <CardTitle className="text-xl">
+                PARA{' '}
+                <strong className="text-emerald-600 font-bold">VOCÊ</strong>
+                <br /> NÃO SER IGUAL <br /> TODO MUNDO
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-base">
+              Elettromec é uma marca conceituada na comercialização de
+              eletrodomésticos de luxo e oferece soluções inteligentes e
+              completas para ambientes gourmets e cozinhas.
+            </CardContent>
+            <CardFooter>
+              <Button className="w-full text-primary" variant={'secondary'}>
+                Saiba mais...
+              </Button>
+            </CardFooter>
+          </Card>
+        </div>
+
+        {/* <div className="flex justify-around gap-2 p-2  mb-16 grid">
+          <iframe
+            className=" max-w-[620px] min-h-80 sm:grid-cols-12 md:grid-cols-6"
+            src="https://www.youtube.com/embed/LHLgcwd0qtk"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+
+          <Card className="text-center  font-light sm:grid-cols-12 md:grid-cols-6 ">
             <CardHeader>
               <CardTitle className="text-xl">
                 PARA{' '}
@@ -61,12 +97,44 @@ export default function Inicio() {
               </Button>
             </CardFooter>
           </Card>
+        </div> */}
+      </div>
+
+      <div
+        className="bg-secondary pb-10"
+        style={{
+          backgroundImage: `url(${bgEscolha})`,
+          backgroundSize: '65% 95%',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'left 80px',
+        }}
+      >
+        <div className="container mx-auto  flex flex-col items-center text-primary p-4 py-20">
+          <h1 className="text-4xl font-light text-gray-600 flex gap-1 items-center mb-8">
+            ESCOLHA SER <img className="max-w-28" src={logo} alt="Invita" />
+          </h1>
+          <MenuEscolha />
         </div>
       </div>
-      <div className="bg-secondary">
-        <div className="container mx-auto min-h-screen">
-          <h1>ESCOLHA SER logo</h1>
-          <div>menu</div>
+
+      <div
+        className="py-16 md:py-52 flex flex-col items-center justify-center"
+        style={{
+          backgroundImage: `url(${backgroundNovidades}), url(${bgGarrafa})`,
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'left -160px, right bottom',
+        }}
+      >
+        <div className="bg-white p-4 rounded shadow">
+          <h1 className="text-4xl font-bold text-pink-400 ">
+            Receba as novidades
+          </h1>
+          <h2 className="text-base font-light ">
+            Cadastre seu e-mail para receber todas as novidades Invita.
+          </h2>
+
+          <InputForm />
         </div>
       </div>
     </section>

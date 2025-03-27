@@ -5,7 +5,7 @@ import { AvatarFallback } from '@radix-ui/react-avatar'
 
 export default function Rodape() {
   return (
-    <footer className="bg-secondary w-full text-primary">
+    <footer className="bg-secondary w-full text-primary px-4">
       <div className="h-[240px] container mx-auto flex items-center justify-around">
         <div className="flex flex-col justify-around h-full">
           <h2 className="text-lg font-bold">Sobre</h2>
