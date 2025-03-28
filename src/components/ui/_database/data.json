@@ -1,0 +1,232 @@
+[
+  {
+    "estado": "Acre",
+    "value": "ac",
+    "cidades": [
+      {
+        "cidade": "Rio Branco",
+        "lojas": [
+          {"nome": "Acre Shopping", "value": "acre_shopping", "endereco": "Av. Ceará, 345 - Centro", "telefone": "68 3224-5678"},
+          {"nome": "Móveis Rio Branco", "value": "moveis_rio_branco", "endereco": "Rua Floriano Peixoto, 1020 - Bosque", "telefone": "68 3225-8910"}
+        ]
+      },
+      {
+        "cidade": "Cruzeiro do Sul",
+        "lojas": [
+          {"nome": "Eletro Cruzeiro", "value": "eletro_cruzeiro", "endereco": "Rua Rodrigues Alves, 200 - Centro", "telefone": "68 3322-7766"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Alagoas",
+    "value": "al",
+    "cidades": [
+      {
+        "cidade": "Maceió",
+        "lojas": [
+          {"nome": "Maceió Casa & Construção", "value": "maceio_casa_construcao", "endereco": "Av. Fernandes Lima, 1200 - Farol", "telefone": "82 3214-5588"},
+          {"nome": "Eletro Nordeste", "value": "eletro_nordeste", "endereco": "Rua Boa Vista, 300 - Centro", "telefone": "82 3221-9988"}
+        ]
+      },
+      {
+        "cidade": "Arapiraca",
+        "lojas": [
+          {"nome": "Lojas Arapiraca", "value": "lojas_arapiraca", "endereco": "Av. Rio Branco, 50 - Centro", "telefone": "82 3522-4499"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "São Paulo",
+    "value": "sp",
+    "cidades": [
+      {
+        "cidade": "São Paulo",
+        "lojas": [
+          {"nome": "Paulista Eletro", "value": "paulista_eletro", "endereco": "Av. Paulista, 1000 - Bela Vista", "telefone": "11 3122-2233"},
+          {"nome": "Shopping SP", "value": "shopping_sp", "endereco": "Rua Augusta, 500 - Consolação", "telefone": "11 3154-6677"},
+          {"nome": "Eletro Mais", "value": "eletro_mais", "endereco": "Av. Paulista, 1200 - Bela Vista", "telefone": "11 3222-3344"},
+          {"nome": "Casa & Construção SP", "value": "casa_construção_sp", "endereco": "Rua dos Três Irmãos, 350 - Itaim Bibi", "telefone": "11 3144-5566"},
+          {"nome": "Mega Shopping", "value": "mega_shopping", "endereco": "Rua dos Três Irmãos, 1000 - Itaim Bibi", "telefone": "11 3033-7788"},
+          {"nome": "Lojas de Móveis São Paulo", "value": "moveis_sao_paulo", "endereco": "Av. dos Estados, 2500 - Mooca", "telefone": "11 2299-8899"},
+          {"nome": "Shopping Anália Franco", "value": "shopping_analia_franco", "endereco": "Av. Regente Feijó, 1739 - Tatuapé", "telefone": "11 2531-3300"},
+          {"nome": "Itaim Home Center", "value": "itaim_home_center", "endereco": "Rua dos Três Irmãos, 250 - Itaim Bibi", "telefone": "11 3156-9988"},
+          {"nome": "Lojas Fortaleza", "value": "lojas_fortaleza", "endereco": "Av. Francisco Matarazzo, 2300 - Água Branca", "telefone": "11 3835-9900"},
+          {"nome": "Shopping Eldorado", "value": "shopping_eldorado", "endereco": "Av. Rebouças, 3970 - Pinheiros", "telefone": "11 3088-1000"},
+          {"nome": "Lojas Colombo", "value": "lojas_colombo", "endereco": "Av. Brigadeiro Faria Lima, 1000 - Vila Progredior", "telefone": "11 3030-3322"},
+          {"nome": "Centro Móveis São Paulo", "value": "centro_moveis_sp", "endereco": "Av. da Liberdade, 500 - Liberdade", "telefone": "11 3201-2233"}
+        ]
+      },
+      {
+        "cidade": "Campinas",
+        "lojas": [
+          {"nome": "Campinas Home Center", "value": "campinas_home_center", "endereco": "Av. Brasil, 140 - Jardim Chapadão", "telefone": "19 3256-8899"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Rio de Janeiro",
+    "value": "rj",
+    "cidades": [
+      {
+        "cidade": "Rio de Janeiro",
+        "lojas": [
+          {"nome": "Copacabana Eletro", "value": "copacabana_eletro", "endereco": "Rua Barata Ribeiro, 800 - Copacabana", "telefone": "21 2556-7788"},
+          {"nome": "Shopping Carioca", "value": "shopping_carioca", "endereco": "Av. das Américas, 4500 - Barra da Tijuca", "telefone": "21 3099-1122"},
+          {"nome": "Rio Eletro", "value": "rio_eletro", "endereco": "Rua dos Três Irmãos, 1500 - Copacabana", "telefone": "21 2256-3344"},
+          {"nome": "Shopping Leblon", "value": "shopping_leblon", "endereco": "Av. Afrânio de Melo Franco, 290 - Leblon", "telefone": "21 2513-1000"},
+          {"nome": "Loja Mundo Móveis", "value": "mundo_moveis", "endereco": "Av. Atlântica, 1500 - Copacabana", "telefone": "21 2258-7788"},
+          {"nome": "Rio Home Center", "value": "rio_home_center", "endereco": "Rua da Carioca, 800 - Centro", "telefone": "21 2222-3322"},
+          {"nome": "Shopping Barra", "value": "shopping_barra", "endereco": "Av. das Américas, 3000 - Barra da Tijuca", "telefone": "21 3139-1122"},
+          {"nome": "Casa e Construção RJ", "value": "casa_construção_rj", "endereco": "Rua Dona Marta, 100 - Botafogo", "telefone": "21 2531-5566"},
+          {"nome": "Niterói Shopping", "value": "niteroi_shopping", "endereco": "Rua da Praia, 1000 - Icaraí", "telefone": "21 2732-4433"},
+          {"nome": "Móveis Brasil Niterói", "value": "moveis_brasil_niteroi", "endereco": "Rua General Pereira da Silva, 500 - Niterói", "telefone": "21 2714-3344"},
+          {"nome": "Shopping Nova América", "value": "shopping_nova_america", "endereco": "Av. Pastor Martin Luther King Jr., 1660 - Del Castilho", "telefone": "21 2537-8899"},
+          {"nome": "Casa & Construção Niterói", "value": "casa_construção_niteroi", "endereco": "Rua São Gonçalo, 700 - Icaraí", "telefone": "21 2724-1122"}        
+        
+        ]
+      },
+      {
+        "cidade": "Niterói",
+        "lojas": [
+          {"nome": "Niterói Center", "value": "niteroi_center", "endereco": "Rua Presidente Backer, 210 - Icaraí", "telefone": "21 2712-3344"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Bahia",
+    "value": "ba",
+    "cidades": [
+      {
+        "cidade": "Salvador",
+        "lojas": [
+          {"nome": "Salvador Móveis", "value": "salvador_moveis", "endereco": "Rua da Piedade, 50 - Centro Histórico", "telefone": "71 3344-5566"},
+          {"nome": "Bahia Eletro", "value": "bahia_eletro", "endereco": "Av. Sete de Setembro, 2300 - Vitória", "telefone": "71 3225-8899"}
+        ]
+      },
+      {
+        "cidade": "Feira de Santana",
+        "lojas": [
+          {"nome": "Feira Shopping", "value": "feira_shopping", "endereco": "Av. Getúlio Vargas, 100 - Centro", "telefone": "75 3622-7788"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Minas Gerais",
+    "value": "mg",
+    "cidades": [
+      {
+        "cidade": "Belo Horizonte",
+        "lojas": [
+          {"nome": "Eletro Minas", "value": "eletro_minas", "endereco": "Av. Amazonas, 1234 - Centro", "telefone": "31 3271-9988"},
+          {"nome": "Home Center BH", "value": "home_center_bh", "endereco": "Rua Rio de Janeiro, 500 - Savassi", "telefone": "31 3223-6655"}
+        ]
+      },
+      {
+        "cidade": "Uberlândia",
+        "lojas": [
+          {"nome": "Uberlândia Móveis", "value": "uberlândia_moveis", "endereco": "Av. Rondon Pacheco, 200 - Santa Mônica", "telefone": "34 3211-2233"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Espírito Santo",
+    "value": "es",
+    "cidades": [
+      {
+        "cidade": "Vitória",
+        "lojas": [
+          {"nome": "Vitória Eletro", "value": "vitoria_eletro", "endereco": "Av. Adalberto Simão Nader, 350 - Centro", "telefone": "27 3223-1122"},
+          {"nome": "Shopping Vitória", "value": "shopping_vitoria", "endereco": "Rua 7 de Setembro, 101 - Praia do Canto", "telefone": "27 3333-4455"}
+        ]
+      },
+      {
+        "cidade": "Vila Velha",
+        "lojas": [
+          {"nome": "Vila Velha Eletro", "value": "vila_velha_eletro", "endereco": "Av. Washington Soares, 100 - Praia da Costa", "telefone": "27 3288-8877"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Paraná",
+    "value": "pr",
+    "cidades": [
+      {
+        "cidade": "Curitiba",
+        "lojas": [
+          {"nome": "Eletro Curitiba", "value": "eletro_curitiba", "endereco": "Av. Sete de Setembro, 1900 - Centro", "telefone": "41 3344-2200"},
+          {"nome": "Shopping Curitiba", "value": "shopping_curitiba", "endereco": "Rua Brigadeiro Franco, 2300 - Batel", "telefone": "41 3354-7788"}
+        ]
+      },
+      {
+        "cidade": "Londrina",
+        "lojas": [
+          {"nome": "Londrina Móveis", "value": "londrina_moveis", "endereco": "Av. Higienópolis, 1500 - Centro", "telefone": "43 3322-8877"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Rio Grande do Sul",
+    "value": "rs",
+    "cidades": [
+      {
+        "cidade": "Porto Alegre",
+        "lojas": [
+          {"nome": "Gaúcha Eletro", "value": "gaucha_eletro", "endereco": "Av. Ipiranga, 1500 - Centro", "telefone": "51 3333-7777"},
+          {"nome": "Shopping Praia de Belas", "value": "shopping_praia_belas", "endereco": "Av. Diário de Notícias, 3000 - Menino Deus", "telefone": "51 3023-2020"}
+        ]
+      },
+      {
+        "cidade": "Caxias do Sul",
+        "lojas": [
+          {"nome": "Caxias Móveis", "value": "caxias_moveis", "endereco": "Rua Francisco Getúlio Vargas, 100 - Centro", "telefone": "54 3222-1122"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Santa Catarina",
+    "value": "sc",
+    "cidades": [
+      {
+        "cidade": "Florianópolis",
+        "lojas": [
+          {"nome": "Florianópolis Eletro", "value": "florianopolis_eletro", "endereco": "Av. Jornalista Rubens de Arruda Ramos, 1500 - Centro", "telefone": "48 3231-4455"},
+          {"nome": "Shopping Iguatemi", "value": "shopping_iguatemi", "endereco": "Av. Madre Benvenuta, 687 - Santa Mônica", "telefone": "48 3231-8000"}
+        ]
+      },
+      {
+        "cidade": "Joinville",
+        "lojas": [
+          {"nome": "Joinville Móveis", "value": "joinville_moveis", "endereco": "Rua Almirante Barroso, 200 - Centro", "telefone": "47 3421-3344"}
+        ]
+      }
+    ]
+  },
+  {
+    "estado": "Pernambuco",
+    "value": "pe",
+    "cidades": [
+      {
+        "cidade": "Recife",
+        "lojas": [
+          {"nome": "Recife Eletro", "value": "recife_eletro", "endereco": "Av. Conselheiro Aguiar, 3000 - Boa Viagem", "telefone": "81 3206-4455"},
+          {"nome": "Shopping Recife", "value": "shopping_recife", "endereco": "Av. Schincariol, 555 - Imbiribeira", "telefone": "81 3091-5500"}
+        ]
+      },
+      {
+        "cidade": "Olinda",
+        "lojas": [
+          {"nome": "Olinda Móveis", "value": "olinda_moveis", "endereco": "Rua 13 de Maio, 1000 - Centro", "telefone": "81 3432-2211"}
+        ]
+      }
+    ]
+  }
+]

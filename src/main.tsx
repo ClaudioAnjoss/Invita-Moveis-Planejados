@@ -6,6 +6,7 @@ import './index.css'
 import Inicio from './pages/Inicio'
 import Produtos from './pages/Produtos'
 import Sobre from './pages/Sobre'
+import OndeEncontrar from './pages/OndeEncontrar'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
           <Route index element={<Inicio />} />
           <Route path="produtos" element={<Produtos />} />
           <Route path="sobre" element={<Sobre />} />
+          <Route path="encontrar" element={<OndeEncontrar />} />
         </Route>
       </Routes>
     </BrowserRouter>

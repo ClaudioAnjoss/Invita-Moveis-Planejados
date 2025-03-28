@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 
 export default function MenuNavegacao() {
   return (
-    <header className="bg-secondary w-full h-[94px] ">
+    <header className="bg-secondary w-full h-[94px] sticky top-0 z-50">
       <div className="container mx-auto h-full flex items-center justify-between px-2">
         <Link to="/">
           <img src="/image/LogoClara.png" alt="Logo da Invita" />

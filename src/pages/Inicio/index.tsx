@@ -67,37 +67,6 @@ export default function Inicio() {
             </CardFooter>
           </Card>
         </div>
-
-        {/* <div className="flex justify-around gap-2 p-2  mb-16 grid">
-          <iframe
-            className=" max-w-[620px] min-h-80 sm:grid-cols-12 md:grid-cols-6"
-            src="https://www.youtube.com/embed/LHLgcwd0qtk"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-
-          <Card className="text-center  font-light sm:grid-cols-12 md:grid-cols-6 ">
-            <CardHeader>
-              <CardTitle className="text-xl">
-                PARA{' '}
-                <strong className="text-emerald-600 font-bold">VOCÊ</strong>{' '}
-                <br /> NÃO SER IGUAL <br /> TODO MUNDO
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-base">
-              Elettromec é uma marca conceituada na comercialização de
-              eletrodomésticos de luxo e oferece soluções inteligentes e
-              completas para ambientes gourmets e cozinhas.
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full text-primary" variant={'secondary'}>
-                Saiba mais...
-              </Button>
-            </CardFooter>
-          </Card>
-        </div> */}
       </div>
 
       <div
@@ -118,7 +87,7 @@ export default function Inicio() {
       </div>
 
       <div
-        className="py-16 md:py-52 flex flex-col items-center justify-center"
+        className="h-[40vh] md:h-[80vh] flex flex-col items-center justify-center"
         style={{
           backgroundImage: `url(${backgroundNovidades}), url(${bgGarrafa})`,
           backgroundSize: 'contain',
@@ -130,7 +99,7 @@ export default function Inicio() {
           <h1 className="text-4xl font-bold text-pink-400 ">
             Receba as novidades
           </h1>
-          <h2 className="text-base font-light ">
+          <h2 className="text-base font-light py-4">
             Cadastre seu e-mail para receber todas as novidades Invita.
           </h2>
 

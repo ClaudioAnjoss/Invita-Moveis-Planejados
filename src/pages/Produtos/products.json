@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Coifas",
+        "category": "Coifas",
+        "image": "/image/prod-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Cooktop Gás Black",
+        "category": "Cooktop",
+        "image": "/image/prod-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Cooktop Gás Inox",
+        "category": "Cooktop",
+        "image": "/image/prod-3.png"
+    },
+    {
+        "id": 4,
+        "name": "Forno Multifunção Eletrônico",
+        "category": "Forno",
+        "image": "/image/prod-4.png"
+    },
+    {
+        "id": 5,
+        "name": "Microondas",
+        "category": "Microondas",
+        "image": "/image/prod-5.png"
+    },
+    {
+        "id": 6,
+        "name": "Refrigeradores BF",
+        "category": "Refrigeradores",
+        "image": "/image/prod-6.png"
+    }
+]
