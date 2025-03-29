@@ -68,8 +68,11 @@ export default function OndeEncontrar() {
             />
           </div>
         </div>
-        <h1 className="my-4 text-3xl">Lojas Encontradas</h1>
-        {selectedLojas.length > 0 ? (
+        {selectedLojas.length > 0 && (
+          <h1 className="my-4 text-3xl">Lojas Encontradas:</h1>
+        )}
+
+        {selectedLojas.length > 0 && (
           <div className="space-y-6 flex flex-wrap gap-4 justify-center">
             {selectedLojas.map((loja) => (
               <div
@@ -93,10 +96,6 @@ export default function OndeEncontrar() {
               </div>
             ))}
           </div>
-        ) : (
-          <p className="text-gray-500">
-            Nenhuma loja encontrada para essa cidade.
-          </p>
         )}
       </div>
     </section>

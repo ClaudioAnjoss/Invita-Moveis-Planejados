@@ -6,9 +6,9 @@ import products from '@/pages/Produtos/products.json'
 
 export default function MenuProducts() {
   return (
-    <section className="relative h-[50vh]  bg-gray-600 text-white p-4 w-full flex flex-col items-center">
-      <h1 className="text-5xl font-bold py-15">Produtos</h1>
-      <ul className="flex gap-4 mt-4">
+    <section className="relative min-h-[350px] md:min-h-[450px] bg-gray-600 text-white p-4 w-full flex flex-col items-center">
+      <h1 className="text-5xl font-bold py-5 md:py-15">Produtos</h1>
+      <ul className="flex gap-4">
         {products.map(({ id, name, image }: iMenuProducts) => (
           <Link
             className="hover:opacity-70 hover:scale-105 transition-transform"
