@@ -9,6 +9,8 @@ import Sobre from './pages/Sobre'
 import OndeEncontrar from './pages/OndeEncontrar'
 import Suporte from './pages/Suporte'
 import Produto from './pages/Produto'
+import Category from './pages/Category'
+import EscolhaCategoria from './pages/EscolhaCategoria'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,7 +18,10 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<PaginaPrincipal />}>
           <Route index element={<Inicio />} />
-          <Route path="produtos" element={<Produtos />} />
+          <Route path="produtos" element={<Produtos />}>
+            <Route index element={<EscolhaCategoria />} />
+            <Route path="categoria/:category" element={<Category />} />
+          </Route>
           <Route path="sobre" element={<Sobre />} />
           <Route path="encontrar" element={<OndeEncontrar />} />
           <Route path="suporte" element={<Suporte />} />
