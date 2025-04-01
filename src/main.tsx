@@ -1,31 +1,31 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import PaginaPrincipal from './pages/PaginaPrincipal'
 import './index.css'
-import Inicio from './pages/Inicio'
-import Produtos from './pages/Produtos'
-import Sobre from './pages/Sobre'
-import OndeEncontrar from './pages/OndeEncontrar'
-import Suporte from './pages/Suporte'
-import Produto from './pages/Produto'
-import Category from './pages/Category'
-import EscolhaCategoria from './pages/EscolhaCategoria'
+import Category from './pages/category'
+import Structure from './pages/structure-layout'
+import Home from './pages/home'
+import ProductNavigation from './pages/product-navigation'
+import CategoryListItems from './pages/category-list-items'
+import FindStore from './pages/find-store'
+import Product from './pages/product'
+import About from './pages/about'
+import Support from './pages/support'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<PaginaPrincipal />}>
-          <Route index element={<Inicio />} />
-          <Route path="produtos" element={<Produtos />}>
-            <Route index element={<EscolhaCategoria />} />
+        <Route path="/" element={<Structure />}>
+          <Route index element={<Home />} />
+          <Route path="produtos" element={<ProductNavigation />}>
+            <Route index element={<CategoryListItems />} />
             <Route path="categoria/:category" element={<Category />} />
+            <Route path=":id" element={<Product />} />
           </Route>
-          <Route path="sobre" element={<Sobre />} />
-          <Route path="encontrar" element={<OndeEncontrar />} />
-          <Route path="suporte" element={<Suporte />} />
-          <Route path="produtos/:id" element={<Produto />} />
+          <Route path="sobre" element={<About />} />
+          <Route path="encontrar" element={<FindStore />} />
+          <Route path="suporte" element={<Support />} />
         </Route>
       </Routes>
     </BrowserRouter>
