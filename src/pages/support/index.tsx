@@ -14,6 +14,8 @@ import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
 import bg from '@/image/bg-suporte.png'
+import SplitText from '@/components/ui/_react-bits/split-text'
+import AnimatedContent from '@/components/ui/_react-bits/animated-content'
 
 const FormSchema = z.object({
   nome: z
@@ -63,78 +65,89 @@ export default function Support() {
       }}
     >
       <div className="bg-neutral-700 flex justify-center items-center h-56">
-        <h1 className="text-primary font-bold text-5xl">Suporte</h1>
+        <SplitText text="Suporte" className="text-primary font-bold text-5xl" />
       </div>
       <div className="container p-4 flex flex-col items-center md:items-end">
-        <div
-          className="max-w-[310px] flex flex-col gap-2 shadow p-4"
-          style={{
-            background: 'oklch(0.97 0.02 12.42 / 0.90)',
-          }}
+        <AnimatedContent
+          distance={150}
+          direction="horizontal"
+          reverse={false}
+          config={{ tension: 80, friction: 20 }}
+          initialOpacity={0.2}
+          animateOpacity
+          scale={1.1}
+          threshold={0.2}
         >
-          <h1 className="text-2xl font-bold text-rose-800">
-            Precisando de ajuda?
-          </h1>
-          <h2 className="font-light text-lg">
-            Envie sua pergunta que retornamos o mais rápido possível.
-          </h2>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)}>
-              <FormField
-                control={form.control}
-                name="nome"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="ml-1">Nome</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Digite seu nome" {...field} />
-                    </FormControl>
-                    <FormMessage className="font-light" />
-                  </FormItem>
-                )}
-              />
+          <div
+            className="max-w-[310px] flex flex-col gap-2 shadow p-4"
+            style={{
+              background: 'oklch(0.97 0.02 12.42 / 0.90)',
+            }}
+          >
+            <h1 className="text-2xl font-bold text-rose-800">
+              Precisando de ajuda?
+            </h1>
+            <h2 className="font-light text-lg">
+              Envie sua pergunta que retornamos o mais rápido possível.
+            </h2>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)}>
+                <FormField
+                  control={form.control}
+                  name="nome"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="ml-1">Nome</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Digite seu nome" {...field} />
+                      </FormControl>
+                      <FormMessage className="font-light" />
+                    </FormItem>
+                  )}
+                />
 
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="ml-1">E-mail</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Digite seu E-mail" {...field} />
-                    </FormControl>
-                    <FormMessage className="font-light" />
-                  </FormItem>
-                )}
-              />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="ml-1">E-mail</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Digite seu E-mail" {...field} />
+                      </FormControl>
+                      <FormMessage className="font-light" />
+                    </FormItem>
+                  )}
+                />
 
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="ml-1">Mensagem</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder="Digite seu message," {...field} />
-                    </FormControl>
-                    <FormMessage className="font-light" />
-                  </FormItem>
-                )}
-              />
-              <p className="text-sm text-muted-foreground">
-                Your message will be copied to the support team.
-              </p>
-              <Button
-                className="text-primary w-full cursor-pointer"
-                type="submit"
-                variant={'secondary'}
-                size={'lg'}
-              >
-                Enviar
-              </Button>
-            </form>
-          </Form>
-        </div>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="ml-1">Mensagem</FormLabel>
+                      <FormControl>
+                        <Textarea
+                          placeholder="Digite seu message,"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage className="font-light" />
+                    </FormItem>
+                  )}
+                />
+                <Button
+                  className="text-primary w-full cursor-pointer mt-4"
+                  type="submit"
+                  variant={'secondary'}
+                  size={'lg'}
+                >
+                  Enviar
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </AnimatedContent>
       </div>
     </section>
   )

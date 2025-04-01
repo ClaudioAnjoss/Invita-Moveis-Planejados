@@ -2,34 +2,34 @@ import { Headset, House, Info, MapPinned, ShoppingBasket } from 'lucide-react'
 import { ReactElement } from 'react'
 
 export interface iListItemNav {
-  title: string
+  label: string
   href: string
   icon?: ReactElement
 }
 
 export const listItemNav: iListItemNav[] = [
   {
-    title: 'Inicio',
+    label: 'Inicio',
     href: '/',
     icon: <House />,
   },
   {
-    title: 'Produtos',
+    label: 'Produtos',
     href: '/produtos',
     icon: <ShoppingBasket />,
   },
   {
-    title: 'Sobre',
+    label: 'Sobre',
     href: '/sobre',
     icon: <Info />,
   },
   {
-    title: 'Onde Encontrar',
+    label: 'Onde Encontrar',
     href: '/encontrar',
     icon: <MapPinned />,
   },
   {
-    title: 'Suporte',
+    label: 'Suporte',
     href: '/suporte',
     icon: <Headset />,
   },

@@ -5,6 +5,8 @@ import { Combobox } from '@/components/ui/combobox'
 import { useState } from 'react'
 import { MapPin, Phone, Store } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import SplitText from '@/components/ui/_react-bits/split-text'
+import AnimatedContent from '@/components/ui/_react-bits/animated-content'
 
 const data: iData[] = database
 
@@ -31,15 +33,11 @@ export default function FindStore() {
           backgroundSize: 'cover',
         }}
       >
-        <span
-          className={`transition-all duration-700 ${selectedEstado ? 'hidden' : 'block'} container mx-auto md:ml-5 text-3xl md:text-5xl max-w-1/2 text-gray-600 font-semibold text-center px-6 py-4 rounded-lg shadow-xl`}
-          style={{
-            backgroundImage: 'linear-gradient(135deg, #f0e4d7ac, #f9f9f993)',
-          }}
-        >
-          Experimente algo novo, um mundo inteiro para explorar, uma nova marca
-          para se apaixonar
-        </span>
+        <SplitText
+          delay={10}
+          className={`transition-transform duration-300 ${selectedEstado ? 'opacity-0 w-0 h-0' : 'opacity-100'} container mx-auto md:ml-5 text-3xl md:text-5xl max-w-1/2 text-gray-600 font-semibold text-center px-6 py-4 rounded-lg shadow-xl`}
+          text="Experimente algo novo, um mundo inteiro para explorar, uma nova marca para se apaixonar"
+        />
       </div>
 
       <div
@@ -86,31 +84,42 @@ export default function FindStore() {
           <h1 className="my-4 text-3xl">Lojas Encontradas:</h1>
         )}
 
-        {selectedLojas.length > 0 && (
-          <div className="space-y-6 flex flex-wrap gap-4 justify-center">
-            {selectedLojas.map((loja) => (
-              <div
-                key={loja.value}
-                className="w-[300px] h-[200px] bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer transform hover:scale-101"
-              >
-                <div className="flex items-center space-x-3 mb-4">
-                  <Store className="text-blue-500 text-3xl" />
-                  <h2 className="text-2xl font-semibold text-gray-800 ">
-                    {loja.nome}
-                  </h2>
+        <AnimatedContent
+          distance={150}
+          direction="horizontal"
+          reverse={false}
+          config={{ tension: 80, friction: 20 }}
+          initialOpacity={0.2}
+          animateOpacity
+          scale={1.1}
+          threshold={0.2}
+        >
+          {selectedLojas.length > 0 && (
+            <div className="space-y-6 flex flex-wrap gap-4 justify-center">
+              {selectedLojas.map((loja) => (
+                <div
+                  key={loja.value}
+                  className="w-[300px] h-[200px] bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer transform hover:scale-101"
+                >
+                  <div className="flex items-center space-x-3 mb-4">
+                    <Store className="text-blue-500 text-3xl" />
+                    <h2 className="text-2xl font-semibold text-gray-800 ">
+                      {loja.nome}
+                    </h2>
+                  </div>
+                  <div className="flex items-center space-x-2 mb-3">
+                    <MapPin className="text-green-500 text-lg" />
+                    <p className="text-gray-600">{loja.endereco}</p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="text-red-500 text-lg" />
+                    <p className="text-gray-600">{loja.telefone}</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-2 mb-3">
-                  <MapPin className="text-green-500 text-lg" />
-                  <p className="text-gray-600">{loja.endereco}</p>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="text-red-500 text-lg" />
-                  <p className="text-gray-600">{loja.telefone}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
+        </AnimatedContent>
       </div>
     </section>
   )

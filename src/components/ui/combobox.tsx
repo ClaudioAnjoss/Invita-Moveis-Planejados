@@ -29,15 +29,18 @@ export function Combobox({ items, value, onChange }: iComboboxProps) {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button
-          variant="outline"
-          role="combobox"
-          aria-expanded={open}
-          className="w-full justify-between"
-        >
-          {value || 'Selecione...'}
-          <ChevronsUpDown className="opacity-50" />
-        </Button>
+        {/* Envolva o Button com um div para evitar o erro de ref */}
+        <div>
+          <Button
+            variant="outline"
+            role="combobox"
+            aria-expanded={open}
+            className="w-full justify-between"
+          >
+            {value || 'Selecione...'}
+            <ChevronsUpDown className="opacity-50" />
+          </Button>
+        </div>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
