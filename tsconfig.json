@@ -4,20 +4,13 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "compilerOptions": {
+ "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "noEmitOnError": false,
-    "skipLibCheck": true, 
-    "allowJs": true, 
-    "noEmit": false, 
-    "strict": false,  
-    "esModuleInterop": true,  
-    "allowImportingTsExtensions": false,  
-    "moduleResolution": "node",
-    "resolveJsonModule": true,  
-    "skipDefaultLibCheck": true 
+    "noEmitOnError": false,  
+    "skipLibCheck": true,    
+    "ignoreDeprecations": "5.0"  
   }
 }
