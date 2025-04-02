@@ -24,10 +24,12 @@ export default function NavigationCategory() {
             to={`/produtos/categoria/${category}`}
           >
             <li className=" flex flex-col items-center text-wrap max-w-[120px] text-center">
-              <Avatar className="w-[100px] h-[100px] border p-0.5 ">
+              <Avatar className="max-w-[100px] min-w-[70px] max-h-[100px] min-h-[70px] border p-0.5 ">
                 <AvatarImage className="rounded-full" src={image} />
               </Avatar>
-              <span className="text-lg font-semibold">{name}</span>
+              <span className="text-sm md:text-lg font-semibold truncate md:whitespace-normal max-w-[100px] ">
+                {name}
+              </span>
             </li>
           </Link>
         ))}

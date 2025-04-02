@@ -36,7 +36,7 @@ export default function About() {
           </span>
         </div>
 
-        <div className="text-xl font-light max-w-[50vw] flex flex-col gap-2">
+        <div className="text-xl p-4 font-light md:max-w-[50vw] flex flex-col gap-2">
           <BlurText
             delay={10}
             animateBy="words"
@@ -114,7 +114,7 @@ export default function About() {
             <h2 className="text-3xl text-center mb-6">
               BENEFÍCIOS DE ESCOLHER A INVITA
             </h2>
-            <div className="text-xl font-light max-w-[50vw] mx-auto flex flex-col gap-4">
+            <div className="text-xl font-light p-2 md:max-w-[50vw] mx-auto flex flex-col gap-4">
               <p>
                 Todos os nossos produtos são projetados com base nas suas
                 necessidades, trazendo mais conforto, praticidade e inovação
@@ -144,7 +144,7 @@ export default function About() {
             <h2 className="text-3xl text-center mb-6">
               TRANSFORME SUA CASA COM A INVITA
             </h2>
-            <p className="text-xl font-light max-w-[60vw] mx-auto">
+            <p className="text-xl font-light md:max-w-[60vw] mx-auto">
               A Invita está aqui para transformar sua casa em um lar moderno,
               funcional e cheio de personalidade. Nossos produtos são feitos
               para quem valoriza qualidade, inovação e praticidade no dia a dia.

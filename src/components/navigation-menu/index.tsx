@@ -32,9 +32,9 @@ export default function NavitationMenu() {
 
         <DropdownMenu>
           <DropdownMenuTrigger className="block md:hidden text-primary p-2 border rounded cursor-pointer hover:bg-primary hover:text-secondary duration-400">
-            <Menu className="" />
+            <Menu />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className=" md:hidden mr-10">
+          <DropdownMenuContent>
             {listItemNav.map(({ label, href, icon }) => (
               <Link key={label} to={href}>
                 <DropdownMenuItem

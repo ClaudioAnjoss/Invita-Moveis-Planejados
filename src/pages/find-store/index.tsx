@@ -4,7 +4,6 @@ import { iData } from '@/components/ui/_types/iData'
 import { Combobox } from '@/components/ui/combobox'
 import { useState } from 'react'
 import { MapPin, Phone, Store } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import SplitText from '@/components/ui/_react-bits/split-text'
 import AnimatedContent from '@/components/ui/_react-bits/animated-content'
 
@@ -27,7 +26,7 @@ export default function FindStore() {
   return (
     <section className="w-full min-h-[50vh] flex flex-col justify-between">
       <div
-        className={`transition-all duration-500 ${selectedEstado ? 'h-[20vh]' : 'h-[50vh]'} flex items-center justify-start text-white text-center`}
+        className={`p-4 transition-all duration-500 ${selectedEstado ? 'h-[20vh]' : 'h-[50vh]'} flex items-center justify-start text-white text-center`}
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: 'cover',
@@ -35,7 +34,7 @@ export default function FindStore() {
       >
         <SplitText
           delay={10}
-          className={`transition-transform duration-300 ${selectedEstado ? 'opacity-0 w-0 h-0' : 'opacity-100'} container mx-auto md:ml-5 text-3xl md:text-5xl max-w-1/2 text-gray-600 font-semibold text-center px-6 py-4 rounded-lg shadow-xl`}
+          className={`transition-transform duration-300 ${selectedEstado ? 'opacity-0 w-0 h-0' : 'opacity-100'} container mx-auto md:ml-5 text-3xl md:text-5xl md:max-w-1/2 text-gray-600 font-semibold text-center px-6 py-4 rounded-lg shadow-xl`}
           text="Experimente algo novo, um mundo inteiro para explorar, uma nova marca para se apaixonar"
         />
       </div>
@@ -49,13 +48,12 @@ export default function FindStore() {
             <span className="font-light text-lg flex justify-between">
               Estado
               {selectedEstado && (
-                <Button
+                <button
                   className="cursor-pointer text-secondary"
-                  variant={'link'}
                   onClick={() => setselectedEstado('')}
                 >
                   Limpar busca
-                </Button>
+                </button>
               )}
             </span>
             <Combobox

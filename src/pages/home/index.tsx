@@ -70,8 +70,8 @@ export default function Home() {
           threshold={0.2}
         >
           <div className="container mx-auto  flex flex-col items-center text-primary p-4 py-20">
-            <div className="text-4xl font-light text-gray-600 flex items-center  mb-8  px-4 w-[500px] ">
-              <span>ESCOLHA SER</span>
+            <div className="text-4xl font-light text-gray-600 flex items-center mb-8  px-4">
+              <span className="hidden sm:block mx-auto">ESCOLHA SER</span>
               <img className="max-w-25 h-9 ml-2" src={inTitle} alt="In" />
               <RotatingText
                 texts={[
@@ -92,7 +92,7 @@ export default function Home() {
       </div>
 
       <div
-        className="h-[40vh] md:h-[80vh] flex flex-col items-center justify-center"
+        className="p-4 md:h-[80vh] flex flex-col items-center justify-center"
         style={{
           backgroundImage: `url(${backgroundNovidades}), url(${bgGarrafa})`,
           backgroundSize: 'contain',

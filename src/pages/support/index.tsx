@@ -64,7 +64,7 @@ export default function Support() {
         backgroundSize: 'contain',
       }}
     >
-      <div className="bg-neutral-700 flex justify-center items-center h-56">
+      <div className="bg-neutral-700 flex justify-center items-center py-6 md:h-56">
         <SplitText text="Suporte" className="text-primary font-bold text-5xl" />
       </div>
       <div className="container p-4 flex flex-col items-center md:items-end">
