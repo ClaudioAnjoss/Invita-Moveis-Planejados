@@ -41,7 +41,7 @@ export default function Product() {
     <section className="w-full">
       <div className="container mx-auto py-8 px-4 flex flex-col gap-4 bg-white rounded mt-4 shadow">
         <Breadcrumb>
-          <BreadcrumbList>
+          <BreadcrumbList className="flex flex-nowrap truncate">
             <BreadcrumbItem>
               <Link to="/">
                 <BreadcrumbLink>Inicio</BreadcrumbLink>
@@ -56,15 +56,17 @@ export default function Product() {
               <BreadcrumbLink>{product?.category}</BreadcrumbLink>
             </Link>
             <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>{product?.nome}</BreadcrumbPage>
+            <BreadcrumbItem className="truncate">
+              <BreadcrumbPage className="truncate">
+                {product?.nome}
+              </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
 
-        <div className="flex gap-4 justify-around">
+        <div className="flex gap-4 justify-around flex-wrap">
           <Carousel
-            className="w-1/2  relative"
+            className="md:max-w-[500px]  relative"
             plugins={[
               Autoplay({
                 delay: 10000,
@@ -93,7 +95,7 @@ export default function Product() {
             </div>
           </Carousel>
 
-          <div className="w-1/2 flex flex-col gap-4 max-h-[300px] lg:max-h-[400px] overflow-y-scroll">
+          <div className="lg:max-w-[350px] flex flex-col gap-4 max-h-[300px] lg:max-h-[400px] overflow-y-scroll">
             <h1 className="text-2xl font-bold">{product?.nome}</h1>
             <h2 className="text-sm truncate">{product?.subtitle}</h2>
             <p className="">{product?.description}</p>
@@ -116,7 +118,7 @@ export default function Product() {
             <AccordionTrigger className="cursor-pointer duration-500 w-full">
               Informações técnicas
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="max-h-[500px] overflow-auto">
               {product?.technicalInformation.map(({ title, description }) => (
                 <div key={title} className="flex justify-between border p-4">
                   <h2>{title}</h2>
@@ -127,11 +129,36 @@ export default function Product() {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="cursor-pointer duration-500">
-              Downloads
+              Manuais e Certificações
             </AccordionTrigger>
             <AccordionContent>
-              Adega Invita inox 16 Garrafas Bivolt Manual do Consumidor Gabarito
-              Guia Comercial Certificação Inmetro
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  <span className="text-blue-500 hover:underline">
+                    Manual do Consumidor (PDF)
+                  </span>
+                </li>
+                <li>
+                  <span className="text-blue-500 hover:underline">
+                    Guia Rápido de Instalação (PDF)
+                  </span>
+                </li>
+                <li>
+                  <span className="text-blue-500 hover:underline">
+                    Certificação Inmetro (PDF)
+                  </span>
+                </li>
+                <li>
+                  <span className="text-blue-500 hover:underline">
+                    Gabarito para Instalação (PDF)
+                  </span>
+                </li>
+                <li>
+                  <span className="text-blue-500 hover:underline">
+                    Guia Comercial do Produto (PDF)
+                  </span>
+                </li>
+              </ul>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

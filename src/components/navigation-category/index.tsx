@@ -16,24 +16,26 @@ export default function NavigationCategory() {
         {category || 'Produtos'}
       </h1>
 
-      <ul className="flex gap-4 flex-wrap items-baseline justify-center ">
-        {products.map(({ id, name, image, category }: iCatalog) => (
-          <Link
-            className="hover:opacity-70 hover:scale-105 transition-transform"
-            key={id}
-            to={`/produtos/categoria/${category}`}
-          >
-            <li className=" flex flex-col items-center text-wrap max-w-[120px] text-center">
-              <Avatar className="max-w-[100px] min-w-[70px] max-h-[100px] min-h-[70px] border p-0.5 ">
-                <AvatarImage className="rounded-full" src={image} />
-              </Avatar>
-              <span className="text-sm md:text-lg font-semibold truncate md:whitespace-normal max-w-[100px] ">
-                {name}
-              </span>
-            </li>
-          </Link>
-        ))}
-      </ul>
+      {!category && (
+        <ul className="flex gap-4 flex-wrap items-baseline justify-center ">
+          {products.map(({ id, name, image, category }: iCatalog) => (
+            <Link
+              className="hover:opacity-70 hover:scale-105 transition-transform"
+              key={id}
+              to={`/produtos/categoria/${category}`}
+            >
+              <li className=" flex flex-col items-center text-wrap max-w-[120px] text-center">
+                <Avatar className="max-w-[100px] min-w-[70px] max-h-[100px] min-h-[70px] border p-0.5 ">
+                  <AvatarImage className="rounded-full" src={image} />
+                </Avatar>
+                <span className="text-sm md:text-lg font-semibold truncate md:whitespace-normal max-w-[100px] ">
+                  {name}
+                </span>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }
