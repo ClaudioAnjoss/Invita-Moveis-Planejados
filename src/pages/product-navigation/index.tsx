@@ -1,7 +1,7 @@
-import NavigationCategory from '@/components/navigation-category'
-import bg from '@/image/bg-suporte.png'
-import bg2 from '@/image/frame-bg-forno.png'
 import { Outlet, useParams } from 'react-router'
+import NavigationCategory from '@/components/navigation-category'
+import bgLeft from '@/image/bg-suporte.png'
+import bgRight from '@/image/frame-bg-forno.png'
 
 export default function ProductNavigation() {
   const { id } = useParams()
@@ -9,7 +9,7 @@ export default function ProductNavigation() {
     <section
       className="w-full min-h-[75vh] flex flex-col justify-between bg-gray-100"
       style={{
-        backgroundImage: `url(${bg}), url(${bg2})`,
+        backgroundImage: `url(${bgLeft}), url(${bgRight})`,
         backgroundSize: '600px, 500px',
         backgroundPosition: 'left 200px, right 170px',
         backgroundRepeat: 'no-repeat, no-repeat',

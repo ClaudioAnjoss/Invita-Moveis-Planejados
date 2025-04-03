@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/_shadcn/button'
 import {
   Form,
   FormControl,
@@ -6,34 +6,34 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+} from '@/components/ui/_shadcn/form'
+import { Input } from '@/components/ui/_shadcn/input'
+import { Textarea } from '@/components/ui/_shadcn/textarea'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
-import bg from '@/image/bg-suporte.png'
 import SplitText from '@/components/ui/_react-bits/split-text'
 import AnimatedContent from '@/components/ui/_react-bits/animated-content'
+import bg from '@/image/bg-suporte.png'
 
 const FormSchema = z.object({
   nome: z
     .string()
     .min(2, {
-      message: 'Nome deve ter pelo menos 2 caracteres.',
+      message: 'O nome deve ter pelo menos 2 caracteres.',
     })
     .max(50, {
-      message: 'Nome não pode ter mais de 50 caracteres.',
+      message: 'O nome não pode ter mais de 50 caracteres.',
     }),
-  email: z.string().email('Email inválido'),
+  email: z.string().email('E-mail inválido. Insira um e-mail válido.'),
   message: z
     .string()
     .min(10, {
-      message: 'Bio must be at least 10 characters.',
+      message: 'A mensagem deve ter pelo menos 10 caracteres.',
     })
     .max(160, {
-      message: 'Bio must not be longer than 30 characters.',
+      message: 'A mensagem não pode ter mais de 160 caracteres.',
     }),
 })
 
@@ -48,10 +48,15 @@ export default function Support() {
   })
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
+    console.log('Dados do formulário enviados:', data)
+
     toast(
-      <pre className="mt-2 rounded-md bg-slate-950 p-4">
-        <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-      </pre>,
+      <div>
+        <strong>Chamado recebido!</strong>
+        <p className="mt-2">
+          Nossa equipe entrará em contato com você por e-mail em breve.
+        </p>
+      </div>,
     )
   }
 

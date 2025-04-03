@@ -1,4 +1,4 @@
-import { Button } from '../ui/button'
+import { Button } from '../ui/_shadcn/button'
 import CardIn from './card-in'
 
 export default function NavigationIn() {

@@ -4,7 +4,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu'
+} from '../ui/_shadcn/dropdown-menu'
 import { Menu } from 'lucide-react'
 import { listItemNav } from '../../database/list-nav-menu'
 import GooeyNav from '../ui/_react-bits/gooey-nav'
@@ -15,13 +15,13 @@ export default function NavitationMenu() {
   return (
     <header className="bg-secondary w-full h-[94px] sticky top-0 z-50 overflow-hidden">
       <div className="container mx-auto h-full flex items-center justify-between px-2">
-        <Link to="/">
+        <a href="/">
           <img
             className="hover:scale-105 duration-500"
             src="/image/LogoClara.png"
             alt="Logo da Invita"
           />
-        </Link>
+        </a>
         <div className="text-primary  gap-2 hidden md:flex transition-all duration-1000">
           <GooeyNav
             items={listItemNav}
@@ -34,7 +34,7 @@ export default function NavitationMenu() {
           <DropdownMenuTrigger className="block md:hidden text-primary p-2 border rounded cursor-pointer hover:bg-primary hover:text-secondary duration-400">
             <Menu />
           </DropdownMenuTrigger>
-          <DropdownMenuContent>
+          <DropdownMenuContent className="">
             {listItemNav.map(({ label, href, icon }) => (
               <Link key={label} to={href}>
                 <DropdownMenuItem

@@ -1,7 +1,7 @@
+import { Link } from 'react-router'
 import AnimatedContent from '@/components/ui/_react-bits/animated-content'
 import products from '@/database/catalog.json'
 import iCatalog from '@/types/iCatalog'
-import { Link } from 'react-router'
 
 export default function CategoryListItems() {
   return (
@@ -17,8 +17,8 @@ export default function CategoryListItems() {
     >
       <div className=" px-4  hidden sm:block">
         <div className="overflow-hidden grid grid-cols-3 gap-2 rounded-[100px] max-w-[900px] mx-auto mt-[-50px] ">
-          {products.map(({ id, name, image }: iCatalog) => (
-            <Link key={id} to={`/produtos/categoria/${name}`}>
+          {products.map(({ id, name, image, category }: iCatalog) => (
+            <Link key={id} to={`/produtos/categoria/${category}`}>
               <div className="cursor-pointer group flex flex-col items-center relative bg-black/30">
                 <img
                   className="w-full h-auto object-contain"

@@ -1,17 +1,16 @@
 import BlurText from '@/components/ui/_react-bits/blur-text'
 import SplitText from '@/components/ui/_react-bits/split-text'
 import SpotlightCard from '@/components/ui/_react-bits/spotlight-card'
-import contentCard from './content-card.json'
-
-import BackgroundImage from '@/image/bg-dir-sobre.png'
 import AnimatedContent from '@/components/ui/_react-bits/animated-content'
+import contentCard from './content-card.json'
+import bg from '@/image/bg-dir-sobre.png'
 
 export default function About() {
   return (
     <section
       className="w-full h-full "
       style={{
-        backgroundImage: `url(${BackgroundImage})`,
+        backgroundImage: `url(${bg})`,
         backgroundPosition: 'right',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -21,7 +20,7 @@ export default function About() {
         className="container mx-auto p-2 "
         style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
       >
-        <div className="text-4xl flex flex-col items-start">
+        <div className="text-2xl md:text-4xl flex flex-col items-center md:items-start">
           <SplitText
             text="ELETRODOMÉSTICOS QUE TE"
             delay={10}

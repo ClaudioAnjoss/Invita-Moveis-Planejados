@@ -1,9 +1,3 @@
-import background from '@/image/bg-header-home.png'
-import backgroundNovidades from '@/image/bg-receba-novidades.png'
-import inTitle from '@/image/in.png'
-import bgEscolha from '@/image/escolha-ser-invita-bg-2.png'
-import bgGarrafa from '@/image/garrafa.png'
-import { InputForm } from '@/components/ui/useform'
 import NavigationIn from '@/components/navigation-in'
 import CardSurprise from '@/components/card-surprise'
 import SplitText from '@/components/ui/_react-bits/split-text'
@@ -11,13 +5,19 @@ import BlurText from '@/components/ui/_react-bits/blur-text'
 import AnimatedContent from '@/components/ui/_react-bits/animated-content'
 import FadeContent from '@/components/ui/_react-bits/fade-content'
 import RotatingText from '@/components/ui/_react-bits/rotating-text'
+import bgStart from '@/image/bg-header-home.png'
+import bgMid from '@/image/escolha-ser-invita-bg-2.png'
+import bgBottomLeft from '@/image/bg-receba-novidades.png'
+import bgBottomRight from '@/image/garrafa.png'
+import inTitle from '@/image/in.png'
+import CardRegisterEmail from '@/components/card-register-email'
 
 export default function Home() {
   return (
     <section
       className="w-full "
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: `url(${bgStart})`,
         backgroundSize: 'cover',
         backgroundPosition: 'top',
         backgroundRepeat: 'no-repeat',
@@ -53,7 +53,7 @@ export default function Home() {
       <div
         className="bg-secondary pb-10"
         style={{
-          backgroundImage: `url(${bgEscolha})`,
+          backgroundImage: `url(${bgMid})`,
           backgroundSize: '65% 95%',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'left 80px',
@@ -94,24 +94,13 @@ export default function Home() {
       <div
         className="p-4 md:h-[80vh] flex flex-col items-center justify-center"
         style={{
-          backgroundImage: `url(${backgroundNovidades}), url(${bgGarrafa})`,
+          backgroundImage: `url(${bgBottomLeft}), url(${bgBottomRight})`,
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'left -160px, right bottom',
         }}
       >
-        <AnimatedContent delay={300}>
-          <div className="bg-white p-4 rounded shadow">
-            <h1 className="text-4xl font-bold text-pink-400 ">
-              Receba as novidades
-            </h1>
-            <h2 className="text-base font-light py-4">
-              Cadastre seu e-mail para receber todas as novidades Invita.
-            </h2>
-
-            <InputForm />
-          </div>
-        </AnimatedContent>
+        <CardRegisterEmail />
       </div>
     </section>
   )

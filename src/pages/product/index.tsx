@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion'
+} from '@/components/ui/_shadcn/accordion'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -11,14 +11,14 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb'
+} from '@/components/ui/_shadcn/breadcrumb'
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
+} from '@/components/ui/_shadcn/carousel'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
 import { products, IProduct } from '../../database/products'

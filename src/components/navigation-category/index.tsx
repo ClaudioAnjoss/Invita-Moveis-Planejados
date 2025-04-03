@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router'
-import { Avatar, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarImage } from '@/components/ui/_shadcn/avatar'
 import products from '@/database/catalog.json'
 import iCatalog from '@/types/iCatalog'
 

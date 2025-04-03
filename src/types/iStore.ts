@@ -1,4 +1,4 @@
-export interface iData {
+export interface iStore {
   estado: string
   value: string
   cidades: {
@@ -11,10 +11,3 @@ export interface iData {
     }[]
   }[]
 }
-
-export interface iEstado {
-  nome: string
-  value: string
-}
-
-export type Database = iEstado[]

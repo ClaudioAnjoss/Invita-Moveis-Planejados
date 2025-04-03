@@ -6,14 +6,14 @@ import {
 } from '@radix-ui/react-accordion'
 import { Separator } from '@radix-ui/react-separator'
 import { CheckCircle, ArrowRight, Smile } from 'lucide-react'
-import { Button } from '../ui/button'
+import { Button } from '../ui/_shadcn/button'
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
   CardFooter,
-} from '../ui/card'
+} from '../ui/_shadcn/card'
 import {
   Dialog,
   DialogContent,
@@ -21,9 +21,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../ui/dialog'
+} from '../ui/_shadcn/dialog'
 import { useState } from 'react'
-import { Slider } from '../ui/slider'
+import { Slider } from '../ui/_shadcn/slider'
 
 export default function CardSurprise() {
   const [surprise, setSurprise] = useState(0)

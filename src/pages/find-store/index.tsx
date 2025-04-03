@@ -1,19 +1,19 @@
-import bg from '@/image/bg-encontrar.png'
-import database from '@/components/ui/_database/data.json'
-import { iData } from '@/components/ui/_types/iData'
-import { Combobox } from '@/components/ui/combobox'
+import { Combobox } from '@/components/ui/_shadcn/combobox'
 import { useState } from 'react'
 import { MapPin, Phone, Store } from 'lucide-react'
+import { iStore } from '@/types/iStore'
+import storesData from '@/database/stores.json'
 import SplitText from '@/components/ui/_react-bits/split-text'
 import AnimatedContent from '@/components/ui/_react-bits/animated-content'
+import bg from '@/image/bg-encontrar.png'
 
-const data: iData[] = database
+const store: iStore[] = storesData
 
 export default function FindStore() {
   const [selectedEstado, setselectedEstado] = useState('')
   const [selectedCidade, setSelectedCidade] = useState('')
   const selectedCidades =
-    data.find((item) => item.estado === selectedEstado)?.cidades || []
+    store.find((item) => item.estado === selectedEstado)?.cidades || []
   const selectedLojas =
     selectedCidades.find((cidade) => cidade.cidade === selectedCidade)?.lojas ||
     []
@@ -57,7 +57,7 @@ export default function FindStore() {
               )}
             </span>
             <Combobox
-              items={data.map(({ estado }) => estado)}
+              items={store.map(({ estado }) => estado)}
               value={selectedEstado}
               onChange={(newValue) => {
                 handleChange(newValue, 'estado')
@@ -69,7 +69,7 @@ export default function FindStore() {
             <span className="font-light text-lg">Cidade</span>
             <Combobox
               items={
-                data
+                store
                   .find((item) => item.estado === selectedEstado)
                   ?.cidades.map(({ cidade }) => cidade) || []
               }
