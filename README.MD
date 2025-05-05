@@ -1,38 +1,46 @@
-<h1 align="center">
-    <img alt="Logo da Invita" src="https://www.invitacasa.com.br/wp-content/uploads/2022/03/logo-rodape.png" />
-    <br>
-    Invita Casa
-</h1>
-
 <div align="center">
- <strong>Objetivo & Desafios</strong>
- 
-<div align="center">   
-<p>Esse site para min foi um grande desafio, pois foi meu primeiro contato profissional com a área da programação, atuei como freelancer e fui responsável por arquitetar o site o mais próximo possível no modelo que recebi pelo “design”, e manter boas práticas como otimização e responsividade.</p> 
+<img alt="Logo da Invita" src="https://www.invitacasa.com.br/wp-content/uploads/2022/03/logo-rodape.png" /> 
+  <p>
+    Esse projeto marcou meu primeiro contato profissional com a área da programação. 
+    Atuei como freelancer e fui responsável por desenvolver todo o site, recriando-o com base fiel ao design recebido, 
+    sempre priorizando boas práticas como performance, responsividade e organização do código.
+  </p>
 </div>
 
+## Deploy
 
- ##
- 
- <strong>Projeto de Demonstração</strong> 
- <p>Aperte <strong>PLAY</strong> para visualizar o gif de demonstração do site.
+A versão online do projeto está hospedada na Vercel:  
+[Clique aqui para visitar o site](https://invita-moveis-planejados.vercel.app/)
 
-<p align="center">
-   <img alt="GitHub" src="https://media1.giphy.com/media/gNOQe4aWsywh1TWzdP/giphy.gif?cid=790b7611affee3a89ec6612ef88fe241accf3479ff6d8060&rid=giphy.gif&ct=g">
-</p>
+## Tecnologias Utilizadas
 
-##
+- **React** – Biblioteca principal para construção da interface  
+- **Vite** – Ferramenta moderna de build e desenvolvimento rápido  
+- **Tailwind CSS** – Framework de estilos utilitários para UI responsiva e consistente  
+- **Figma** – Ferramenta de design utilizada para o layout da interface
 
-<strong>DESAFIOS</strong>
+## Como Rodar Localmente
 
-<p>
- Pra desenvolver esse site eu tive aprender conceitos e tecnicas sobre o Figma que foi fundamental para me ajudar a chegar nesse resultado
-</p>
- 
- ##
- 
- <strong>CREDITOS</strong>
- 
- Made with ♥ by Claudio Anjos :wave: [Visite meu Linkedin!](https://www.linkedin.com/in/claudioanjoss/)
- 
- </div>
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/ClaudioAnjoss/Invita-Moveis-Planejados
+
+   cd Invita-Moveis-Planejados
+   ```
+
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Abra no navegador**:
+   ```
+   http://localhost:5173
+   ```
+
+> **Requisitos:** Certifique-se de ter o Node.js instalado na versão LTS.
